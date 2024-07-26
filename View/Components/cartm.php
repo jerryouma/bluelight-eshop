@@ -23,7 +23,7 @@ class cartm extends Component
     public function render(): View|Closure|string
     {
         $data=cart::all();
-        $user=Auth()::user();
+        $user=Auth::user();
         return view('components.cartm',compact('data'));
     }
 }
